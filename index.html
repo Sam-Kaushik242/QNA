@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q&A Website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Q&A Website</h1>
+
+        <!-- Question 1 -->
+        <div class="question active" id="q1">
+            <div class="question-text">Q1: What is HTML?</div>
+            <div class="options">
+                <div class="option" data-answer="A" data-correct="A" onclick="checkAnswer(this, 'q1')">A. HyperText Markup Language</div>
+                <div class="option" data-answer="B" data-correct="A" onclick="checkAnswer(this, 'q1')">B. HyperTransfer Markup Language</div>
+                <div class="option" data-answer="C" data-correct="A" onclick="checkAnswer(this, 'q1')">C. HighText Markup Language</div>
+                <div class="option" data-answer="D" data-correct="A" onclick="checkAnswer(this, 'q1')">D. HyperText Mode Language</div>
+            </div>
+            <div class="result" id="q1-result"></div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question" id="q2">
+            <div class="question-text">Q2: What is CSS?</div>
+            <div class="options">
+                <div class="option" data-answer="A" data-correct="A" onclick="checkAnswer(this, 'q2')">A. Cascading Style Sheets</div>
+                <div class="option" data-answer="B" data-correct="A" onclick="checkAnswer(this, 'q2')">B. Computer Style Sheets</div>
+                <div class="option" data-answer="C" data-correct="A" onclick="checkAnswer(this, 'q2')">C. Creative Style Sheets</div>
+                <div class="option" data-answer="D" data-correct="A" onclick="checkAnswer(this, 'q2')">D. Colorful Style Sheets</div>
+            </div>
+            <div class="result" id="q2-result"></div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question" id="q3">
+            <div class="question-text">Q3: What is JavaScript?</div>
+            <div class="options">
+                <div class="option" data-answer="A" data-correct="A" onclick="checkAnswer(this, 'q3')">A. A high-level programming language</div>
+                <div class="option" data-answer="B" data-correct="A" onclick="checkAnswer(this, 'q3')">B. A markup language</div>
+                <div class="option" data-answer="C" data-correct="A" onclick="checkAnswer(this, 'q3')">C. A database management system</div>
+                <div class="option" data-answer="D" data-correct="A" onclick="checkAnswer(this, 'q3')">D. An operating system</div>
+            </div>
+            <div class="result" id="q3-result"></div>
+        </div>
+
+       <!-- Question 4 -->
+<div class="question" id="q4">
+    <div class="question-text">Q4: What does CSS stand for?</div>
+    <div class="options">
+        <div class="option" data-answer="A" data-correct="A" onclick="checkAnswer(this, 'q4')">A. Cascading Style Sheets</div>
+        <div class="option" data-answer="B" data-correct="A" onclick="checkAnswer(this, 'q4')">B. Computer Style Sheets</div>
+        <div class="option" data-answer="C" data-correct="A" onclick="checkAnswer(this, 'q4')">C. Colorful Style Sheets</div>
+        <div class="option" data-answer="D" data-correct="A" onclick="checkAnswer(this, 'q4')">D. Creative Style Sheets</div>
+    </div>
+    <div class="result" id="q4-result"></div>
+</div>
+
+<!-- Question 5 -->
+<div class="question" id="q5">
+    <div class="question-text">Q5: What is the correct syntax for an inline CSS style?</div>
+    <div class="options">
+        <div class="option" data-answer="A" data-correct="C" onclick="checkAnswer(this, 'q5')">A. style="text-color: blue;"</div>
+        <div class="option" data-answer="B" data-correct="C" onclick="checkAnswer(this, 'q5')">B. style="font-color: red;"</div>
+        <div class="option" data-answer="C" data-correct="C" onclick="checkAnswer(this, 'q5')">C. style="color: green;"</div>
+        <div class="option" data-answer="D" data-correct="C" onclick="checkAnswer(this, 'q5')">D. style="background: yellow;"</div>
+    </div>
+    <div class="result" id="q5-result"></div>
+</div>
+
+<!-- Question 6 -->
+<div class="question" id="q6">
+    <div class="question-text">Q6: Which HTML tag is used to create an ordered list?</div>
+    <div class="options">
+        <div class="option" data-answer="A" data-correct="C" onclick="checkAnswer(this, 'q6')">A. &lt;ul&gt;</div>
+        <div class="option" data-answer="B" data-correct="C" onclick="checkAnswer(this, 'q6')">B. &lt;li&gt;</div>
+        <div class="option" data-answer="C" data-correct="C" onclick="checkAnswer(this, 'q6')">C. &lt;ol&gt;</div>
+        <div class="option" data-answer="D" data-correct="C" onclick="checkAnswer(this, 'q6')">D. &lt;dl&gt;</div>
+    </div>
+    <div class="result" id="q6-result"></div>
+</div>
+
+<!-- Question 7 -->
+<div class="question" id="q7">
+    <div class="question-text">Q7: Which programming language is used for adding interactivity to a website?</div>
+    <div class="options">
+        <div class="option" data-answer="A" data-correct="D" onclick="checkAnswer(this, 'q7')">A. Python</div>
+        <div class="option" data-answer="B" data-correct="D" onclick="checkAnswer(this, 'q7')">B. Java</div>
+        <div class="option" data-answer="C" data-correct="D" onclick="checkAnswer(this, 'q7')">C. C++</div>
+        <div class="option" data-answer="D" data-correct="D" onclick="checkAnswer(this, 'q7')">D. JavaScript</div>
+    </div>
+    <div class="result" id="q7-result"></div>
+</div>
+
+<!-- Question 8 -->
+<div class="question" id="q8">
+    <div class="question-text">Q8: Which CSS property is used to change the background color of an element?</div>
+    <div class="options">
+        <div class="option" data-answer="A" data-correct="B" onclick="checkAnswer(this, 'q8')">A. color</div>
+        <div class="option" data-answer="B" data-correct="B" onclick="checkAnswer(this, 'q8')">B. background-color</div>
+        <div class="option" data-answer="C" data-correct="B" onclick="checkAnswer(this, 'q8')">C. text-color</div>
+        <div class="option" data-answer="D" data-correct="B" onclick="checkAnswer(this, 'q8')">D. border-color</div>
+    </div>
+    <div class="result" id="q8-result"></div>
+</div>
+
+<!-- Question 9 -->
+<div class="question" id="q9">
+    <div class="question-text">Q9: What is the correct way to link an external JavaScript file to an HTML document?</div>
+    <div class="options">
+        <div class="option" data-answer="A" data-correct="A" onclick="checkAnswer(this, 'q9')">A. &lt;script src="script.js"&gt;&lt;/script&gt;</div>
+        <div class="option" data-answer="B" data-correct="A" onclick="checkAnswer(this, 'q9')">B. &lt;js&gt;script.js&lt;/js&gt;</div>
+        <div class="option" data-answer="C" data-correct="A" onclick="checkAnswer(this, 'q9')">C. &lt;link rel="javascript" href="script.js"&gt;</div>
+        <div class="option" data-answer="D" data-correct="A" onclick="checkAnswer(this, 'q9')">D. &lt;src&gt;script.js&lt;/src&gt;</div>
+    </div>
+    <div class="result" id="q9-result"></div>
+</div>
+
+<!-- Question 10 -->
+<div class="question" id="q10">
+    <div class="question-text">Q10: What does the acronym DOM stand for in web development?</div>
+    <div class="options">
+        <div class="option" data-answer="A" data-correct="A" onclick="checkAnswer(this, 'q10')">A. Document Object Model</div>
+        <div class="option" data-answer="B" data-correct="A" onclick="checkAnswer(this, 'q10')">B. Document Order Model</div>
+        <div class="option" data-answer="C" data-correct="A" onclick="checkAnswer(this, 'q10')">C. Design Object Model</div>
+        <div class="option" data-answer="D" data-correct="A" onclick="checkAnswer(this, 'q10')">D. Dynamic Order Model</div>
+    </div>
+    <div class="result" id="q10-result"></div>
+</div>
+
+        <!-- Next Question Button -->
+        <div class="button-container">
+            <button class="next-button" onclick="nextQuestion()">Next Question</button>
+        </div>
+
+        <!-- Done Button -->
+<div class="button-container">
+    <button class="next-button" id="done-button" style="display: none;" onclick="showResult()">Done</button>
+</div>
+
+    </div>
+
+    <script>
+        let currentQuestion = 1;
+
+        function checkAnswer(option, questionId) {
+            const resultElement = document.getElementById(`${questionId}-result`);
+            const selectedAnswer = option.getAttribute("data-answer");
+            const correctAnswer = option.getAttribute("data-correct");
+
+            if (selectedAnswer === correctAnswer) {
+                resultElement.innerHTML = 'Your Answer: ' + selectedAnswer + ' (Correct)';
+                resultElement.style.color = 'green';
+            } else {
+                resultElement.innerHTML = 'Your Answer: ' + selectedAnswer + ' (Incorrect). The correct answer is: ' + correctAnswer;
+                resultElement.style.color = 'red';
+            }
+        }
+        function nextQuestion() {
+            
+            if (currentQuestion < 10) {
+                
+                const current = document.getElementById(`q${currentQuestion}`);
+                const next = document.getElementById(`q${currentQuestion + 1}`);
+
+                if (current && next) {
+                    current.style.display = 'none';
+                    next.style.display = 'block';
+            currentQuestion++;
+        }
+    } else {
+        document.getElementById('done-button').style.display = 'block';
+        document.querySelector('.next-button').style.display = 'none';
+    }
+}
+        function showResult() {
+    alert("Congratulations! You have completed all 10 questions.");
+}
+    </script>
+</body>
+</html>
